@@ -1,0 +1,80 @@
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  padding: 0 7rem;
+  background-color: #fff;
+  height: 3.5rem;
+}
+.header-container {
+  margin: 0 auto;
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.name {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.navigation-item a {
+  font-size: 13px;
+  font-weight: 500;
+  color: #555a64;
+}
+.nav-toggle-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #678abe;
+}
+
+.nav-toggle-btn div {
+  width: 1.4rem;
+  height: 0.13rem;
+  background-color: #ffff;
+}
+@media screen and (min-width: 769px) {
+  .nav-toggle-btn {
+    display: none;
+  }
+  .navigation-items-list {
+    display: flex;
+    list-style: none;
+  }
+  .navigation-item {
+    margin-left: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-container {
+    position: relative;
+  }
+  .navigation-items-list {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    background: #ffffff;
+    list-style: none;
+    position: absolute;
+    top: 3.5rem;
+    left: 0rem;
+    right: 0rem;
+  }
+  .navigation-item:not(:first-child) {
+    border-top: 1px solid #ddd;
+  }
+  .navigation-item a {
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.035rem;
+    color: #090a0c;
+  }
+}
