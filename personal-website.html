@@ -12,12 +12,25 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/home-page.css" />
   </head>
   <body>
     <header>
       <nav class="header-container">
         <span class="name">Derek</span>
+        <div class="nav-toggle-btn">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
         <ul class="navigation-items-list">
           <li class="navigation-item"><a href="#home">Home</a></li>
           <li class="navigation-item"><a href="#about-me">About me</a></li>
@@ -32,7 +45,7 @@
       <section class="home-section" id="home">
         <div class="home-section-container">
           <div class="introduce-summary">
-            <p>Hello there</p>
+            <p>Hello there...</p>
             <h1>Derek Hu</h1>
             <h3>I Am Passionate Structural Engineer</h3>
             <p class="job-summary">
@@ -49,8 +62,11 @@
             </button>
           </div>
           <div class="person-image">
-            <img src="person-images/personal-image.png" />
+            <img src="person-images/person-pic.png" />
           </div>
+        </div>
+        <div class="slider">
+          <a href="#about-me"><i class="fas fa-chevron-down"></i></a>
         </div>
       </section>
       <section class="about-me-section" id="about-me">
@@ -61,7 +77,7 @@
           </h4>
           <div class="personal-info-container">
             <div class="personal-picture">
-              <img src="person-images/about-me-pic.jpeg" />
+              <img src="person-images/about-me.jpg" />
               <div class="social-links">
                 <a><i class="fab fa-facebook-f"></i></a>
                 <a><i class="fab fa-linkedin-in"></i></a>

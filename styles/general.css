@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: #555a64;
+  background-color: #fefefe;
+  /* padding: 0 7rem; */
+}
+a {
+  text-decoration: none;
+}
+button {
+  border-style: solid;
+  background: #678abe;
+  border-color: #678abe;
+  border-radius: 0.2rem;
+  padding: 0.8rem 1.5rem;
+  margin-top: 0.5rem;
+}
+button a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+}
+section {
+  color: #090a0c;
+  padding: 0 7rem;
+}
