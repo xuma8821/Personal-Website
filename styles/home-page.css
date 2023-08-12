@@ -1,21 +1,21 @@
 .home-section {
-  background-color: #eaedf2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
 }
 .home-section-container {
-  padding-top: 3.5rem;
-  min-height: calc(100vh - 3.5rem);
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1140px;
 }
 
 .introduce-summary p,
 .introduce-summary h1,
 .introduce-summary h3,
 .introduce-summary .job-summary {
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 .introduce-summary p {
   font-weight: 500;
@@ -26,6 +26,7 @@
   font-weight: 600;
 }
 .introduce-summary h3 {
+  color: #090a0c;
   font-size: 17px;
   font-weight: 500;
 }
@@ -34,11 +35,14 @@
   font-weight: 400;
   color: rgba(9, 10, 12, 0.8);
 }
+.introduce-summary .greeting {
+  color: #090a0c;
+}
 .person-image img {
   max-width: 100%;
 }
 .hire-btn {
-  margin-left: 0.5rem;
+  margin-left: 8px;
 
   background-color: #ffffff;
 }
@@ -46,15 +50,17 @@
   color: #678abe;
 }
 .slider {
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  right: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
 }
 .slider a {
-  width: 2rem;
-  height: 2rem;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   background-color: #678abe;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,20 +74,20 @@
   }
   to {
     opacity: 1;
-    transform: translate(0, -0.8rem);
+    transform: translate(0, -13px);
   }
 }
 @media screen and (max-width: 768px) {
   .home-section-container {
     flex-direction: column;
     align-items: center;
-    padding: 4rem 2rem;
+    padding: 64px 32px;
   }
   img {
-    margin-top: 2rem;
+    margin-top: 32px;
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 769px) {
   .introduce-summary,
   .person-image {
     flex: 0 0 50%;
