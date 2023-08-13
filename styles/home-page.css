@@ -77,7 +77,7 @@
     transform: translate(0, -13px);
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .home-section-container {
     flex-direction: column;
     align-items: center;
@@ -87,7 +87,7 @@
     margin-top: 32px;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .introduce-summary,
   .person-image {
     flex: 0 0 50%;
