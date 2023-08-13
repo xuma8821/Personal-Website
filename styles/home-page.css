@@ -49,6 +49,9 @@
 .hire-btn a {
   color: #678abe;
 }
+.hire-btn:hover a {
+  color: #ffffff;
+}
 .slider {
   position: absolute;
   right: 50%;

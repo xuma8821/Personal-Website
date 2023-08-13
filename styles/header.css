@@ -28,6 +28,9 @@ header {
   color: #090a0c;
   text-transform: uppercase;
 }
+.navigation-item:hover a {
+  color: #678abe;
+}
 .nav-toggle-btn {
   display: flex;
   flex-direction: column;
