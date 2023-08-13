@@ -38,6 +38,8 @@ section:nth-child(odd) {
 .section-container {
   max-width: 1140px;
   margin: 0 auto;
+  /* padding-right: 15px;
+  padding-left: 15px; */
 }
 h1 {
   color: #090a0c;
@@ -69,3 +71,24 @@ h4 {
   font-weight: 400;
   color: #555a64;
 }
+/* @media (min-width: 576px) {
+  .section-container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .section-container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .section-container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-container {
+    max-width: 1140px;
+  }
+} */

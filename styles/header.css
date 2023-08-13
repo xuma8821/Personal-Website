@@ -43,7 +43,7 @@ header {
   height: 2px;
   background-color: #ffff;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .nav-toggle-btn {
     display: none;
   }
@@ -55,7 +55,7 @@ header {
     margin-left: 16px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header-container {
     position: relative;
   }
