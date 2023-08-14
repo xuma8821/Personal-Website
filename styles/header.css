@@ -5,7 +5,7 @@ header {
   left: 0;
   z-index: 5;
   padding: 0 112px;
-  background-color: #fff;
+  background-color: #ffffff;
   height: 56px;
   color: #090a0c;
 }
@@ -44,7 +44,7 @@ header {
 .nav-toggle-btn div {
   width: 22.4px;
   height: 2px;
-  background-color: #ffff;
+  background-color: #ffffff;
 }
 @media screen and (min-width: 768px) {
   .nav-toggle-btn {
