@@ -4,13 +4,19 @@
 }
 .personal-picture {
   position: relative;
+
+  border-radius: 5px;
+}
+.personal-picture img {
+  border: 13px solid #ffffff;
+  width: 100%;
 }
 .social-links {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 20px;
-  left: -2px;
+  top: 28px;
+  left: 12px;
   background-color: #ffffff;
 }
 .social-links a {
@@ -20,7 +26,7 @@
   padding: 8px 10px;
   margin: 6px 6px 6px 0;
 }
-.social-links .facebook-link {
+.social-links a:not(:last-child) {
   margin-bottom: 0;
 }
 .personal-basic-info h3 {
@@ -74,12 +80,8 @@
 @media screen and (min-width: 1280px) {
   .personal-picture {
     flex: 0 0 30%;
-    border: 13px solid #ffffff;
-    border-radius: 5px;
   }
-  .personal-picture img {
-    width: 100%;
-  }
+
   .personal-basic-info {
     flex: 0 0 70%;
     padding-left: 64px;
@@ -97,11 +99,6 @@
   }
   .personal-picture {
     width: 70%;
-    border: 13px solid #ffffff;
-    border-radius: 5px;
-  }
-  .personal-picture img {
-    width: 100%;
   }
   .personal-basic-info h3 {
     margin-top: 30px;

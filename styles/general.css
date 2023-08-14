@@ -39,7 +39,7 @@ section:nth-child(even) {
   background-color: #eaedf2;
 }
 section:nth-child(odd) {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .section-container {
   max-width: 1140px;

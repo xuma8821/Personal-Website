@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="styles/about-me.css" />
     <link rel="stylesheet" href="styles/my-skills.css" />
     <link rel="stylesheet" href="styles/my-service.css" />
+    <link rel="stylesheet" href="styles/contact-page.css" />
   </head>
   <body>
     <header>
@@ -37,7 +38,7 @@
         <ul class="navigation-items-list">
           <li class="navigation-item"><a href="#home">Home</a></li>
           <li class="navigation-item"><a href="#about-me">About me</a></li>
-          <li class="navigation-item"><a href="#service">Services</a></li>
+          <li class="navigation-item"><a href="#services">Services</a></li>
           <li class="navigation-item"><a href="#resume">Resume</a></li>
           <li class="navigation-item"><a href="#portfolio">Portfolio</a></li>
           <li class="navigation-item"><a href="#contact">Contact</a></li>
@@ -83,7 +84,14 @@
               <img src="person-images/about-me.jpg" />
               <div class="social-links">
                 <a class="facebook-link"><i class="fab fa-facebook-f"></i></a>
-                <a class="linkedin-link"><i class="fab fa-linkedin-in"></i></a>
+                <a
+                  class="linkedin-link"
+                  href="https://www.linkedin.com/in/derek-hu-7559b8283/"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="mailto:becontentment@outlook.com"
+                  ><i class="far fa-envelope"></i
+                ></a>
               </div>
             </div>
             <div class="personal-basic-info">
@@ -243,8 +251,8 @@
               </div>
               <h5>Civil Project Consult</h5>
               <p>
-                Providing civil related consulting service such as structure
-                plan evaluation, structure safety review and cost control plan.
+                Provide civil related consulting service such as structure plan
+                evaluation, structure safety review and cost control plan.
               </p>
             </div>
 
@@ -355,46 +363,83 @@
           </div>
         </div>
       </section>
-      <section class="contact-section" id="contact">
+      <section
+        class="contact-section"
+        style="background-color: #eaedf2"
+        id="contact"
+      >
         <div class="section-container contact-section-container">
           <h2>GET IN TOUCH</h2>
           <h4 class="job-title">
             A PROFEESIONAL STRUCTURAL ENGINEER BASED IN AUSTRALIA
           </h4>
           <div class="contact-info-container">
-            <form>
+            <form
+              action="mailto:becontentment@outlook.com"
+              method="post"
+              enctype="text/plain"
+            >
               <fieldset>
                 <legend>SAY SOMETHING</legend>
-                <label for="name">Name *</label>
-                <input type="text" id="name" required />
-                <label for="email">Email *</label>
-                <input type="email" id="email" required />
-                <label for="subjects">Subjects</label>
-                <input type="text" id="subjects" required />
-                <label for="message">Your message *</label>
-                <textarea maxlength="50" required></textarea>
+                <div class="input-field">
+                  <input type="text" id="name" placeholder="Name *" required />
+                  <span></span>
+                </div>
+                <div class="input-field">
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Email *"
+                    required
+                  />
+                  <span></span>
+                </div>
+                <div class="input-field">
+                  <input
+                    type="text"
+                    id="subjects"
+                    placeholder="Subject *"
+                    required
+                  />
+                  <span></span>
+                </div>
+                <div class="input-field">
+                  <textarea
+                    maxlength="50"
+                    placeholder="Your message *"
+                    required
+                  ></textarea>
+                  <span></span>
+                </div>
                 <button class="btn contact-msg-btn">SEND MESSAGE</button>
               </fieldset>
             </form>
             <div class="contact-cards-container">
-              <div class="address-card">
-                <i class="fas fa-map-marker-alt"></i>
-                <div>
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-datails">
                   <h4>My Address</h4>
                   <p>9 Rose Valley Way, Zetland, NSW, 2017</p>
                 </div>
               </div>
-              <div class="phone-card">
-                <i class="fas fa-mobile-alt"></i>
-                <div>
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+
+                <div class="contact-datails">
                   <h4>Contact Number</h4>
                   <p>+61 0432047252</p>
                 </div>
               </div>
-              <div class="email-card">
-                <i class="far fa-envelope"></i>
-                <h4>Email Address</h4>
-                <p>becontentment@outlook.com</p>
+              <div class="contact-card">
+                <div class="contact-icon"><i class="far fa-envelope"></i></div>
+                <div class="contact-datails">
+                  <h4>Email Address</h4>
+                  <p>becontentment@outlook.com</p>
+                </div>
               </div>
             </div>
           </div>
@@ -402,11 +447,18 @@
       </section>
     </main>
     <footer>
-      <div class="contact-links">
-        <a><i class="fab fa-facebook-f"></i></a>
-        <a><i class="fab fa-linkedin-in"></i></a>
+      <div class="footer-container">
+        <div class="contact-links">
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/in/derek-hu-7559b8283/"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="mailto:becontentment@outlook.com"
+            ><i class="far fa-envelope"></i
+          ></a>
+        </div>
+        <p>© 2023 copyright all right reserved</p>
       </div>
-      <p>© 2023 copyright all right reserved</p>
     </footer>
   </body>
 </html>
