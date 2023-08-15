@@ -39,3 +39,8 @@
   font-size: 32px;
   margin-bottom: 22px;
 }
+@media screen and (max-width: 767px) {
+  .service-item-container {
+    grid-column-end: span 2;
+  }
+}
