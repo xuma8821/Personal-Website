@@ -1,6 +1,15 @@
 .skills-container {
   display: flex;
 }
+.skills-container {
+  justify-content: space-between;
+}
+.skill-items-container {
+  flex: 0 0 50%;
+}
+.achievements-container {
+  flex: 0 0 40%;
+}
 .skill-item {
   list-style: none;
 }
@@ -77,16 +86,5 @@
 
   .achievements-container {
     margin-top: 50px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .skills-container {
-    justify-content: space-between;
-  }
-  .skill-items-container {
-    flex: 0 0 50%;
-  }
-  .achievements-container {
-    flex: 0 0 40%;
   }
 }

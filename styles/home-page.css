@@ -10,7 +10,10 @@
   justify-content: center;
   align-items: center;
 }
-
+.introduce-summary,
+.person-image {
+  flex: 0 0 50%;
+}
 .introduce-summary p,
 .introduce-summary h1,
 .introduce-summary h3,
@@ -97,13 +100,7 @@
     align-items: center;
     padding: 64px 32px;
   }
-  img {
+  .home-section-container img {
     margin-top: 32px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .introduce-summary,
-  .person-image {
-    flex: 0 0 50%;
   }
 }
