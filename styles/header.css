@@ -22,13 +22,13 @@ header {
   font-weight: 600;
 }
 
-.navigation-item a {
+.navigation-item .nav-page-link {
   font-size: 13px;
   font-weight: 500;
   color: #090a0c;
   text-transform: uppercase;
 }
-.navigation-item:hover a {
+.navigation-item:hover .nav-page-link {
   color: #678abe;
 }
 .nav-toggle-btn {
@@ -53,6 +53,8 @@ header {
   .navigation-items-list {
     display: flex;
     list-style: none;
+    align-items: center;
+    margin: 0;
   }
   .navigation-item {
     margin-left: 16px;
@@ -75,7 +77,7 @@ header {
   .navigation-item:not(:first-child) {
     border-top: 1px solid #ddd;
   }
-  .navigation-item a {
+  .navigation-item .nav-page-link {
     font-size: 13px;
     font-weight: 500;
     text-transform: uppercase;
