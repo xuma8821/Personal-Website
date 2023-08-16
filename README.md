@@ -7,4 +7,4 @@ Welcome to my project! This is a personal website made in HTML, CSS and Javascri
 ## Demo
 
 For more details,click below link to check out.
-[Demo](https://64dc7e947ae1453fe516d659--papaya-froyo-f9af63.netlify.app/)
+[Demo](https://papaya-froyo-f9af63.netlify.app/)
