@@ -97,6 +97,10 @@
   .personal-picture {
     width: 50%;
   }
+  .personal-basic-info {
+    width: 100%;
+    padding: 0 32px;
+  }
   .personal-basic-info h3 {
     margin-top: 30px;
   }
