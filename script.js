@@ -8,7 +8,6 @@ const contactForm = document.querySelector("form");
 const navToggleBtn = document.querySelector(".nav-toggle-btn");
 const slideToView = function (e) {
   e.preventDefault();
-  console.log(e.target);
   if (e.target.classList.contains("nav-page-link")) {
     const id = e.target.getAttribute("href");
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
@@ -16,7 +15,6 @@ const slideToView = function (e) {
 };
 function submitForm(event) {
   event.preventDefault();
-  console.log("a");
   nameInput.value = "";
   emailInput.value = "";
   msgInput.value = "";
