@@ -5,6 +5,7 @@ const emailInput = document.querySelector("#email");
 const msgInput = document.querySelector("#message");
 const submitBtn = document.querySelector(".contact-msg-btn");
 const contactForm = document.querySelector("form");
+const navToggleBtn = document.querySelector(".nav-toggle-btn");
 const slideToView = function (e) {
   e.preventDefault();
   console.log(e.target);
@@ -26,3 +27,7 @@ function submitForm(event) {
 navList.addEventListener("click", slideToView);
 homeSection.addEventListener("click", slideToView);
 contactForm.addEventListener("submit", submitForm);
+navToggleBtn.addEventListener("click", function () {
+  navList.classList.toggle("inactive");
+  navList.classList.toggle("active");
+});

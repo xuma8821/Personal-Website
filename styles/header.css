@@ -64,7 +64,7 @@ header {
   .header-container {
     position: relative;
   }
-  .navigation-items-list {
+  .navigation-items-list.active {
     padding: 8px 15px;
     border: 1px solid #ddd;
     background: #ffffff;
@@ -73,6 +73,9 @@ header {
     top: 56px;
     left: 0;
     right: 0;
+  }
+  .navigation-items-list.inactive {
+    display: none;
   }
   .navigation-item:not(:first-child) {
     border-top: 1px solid #ddd;
