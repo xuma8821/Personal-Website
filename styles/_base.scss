@@ -1,0 +1,135 @@
+$black-color: #090a0c;
+$blue-color: #678abe;
+$white-color: #ffffff;
+$form-color: #f4f4f6;
+$grey-color: rgba(255, 255, 255, 0.5);
+$default-color: #555a64;
+$resume-light-blue: #91bcfc;
+$resume-light-green: #96d7a5;
+$resume-dark-green: #4abd86;
+$resume-light-purple: #b19ad2;
+$resume-dark-purple: #956ad5;
+@mixin fontStyle($size: 14px, $weight: 500, $color: #555a64) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+@mixin borderStyle($radius: false, $border: false) {
+  @if $radius {
+    border-radius: $radius;
+  }
+  @if $border {
+    border: $border;
+  }
+}
+@mixin shadowStyle($shadow) {
+  box-shadow: $shadow;
+}
+@mixin flexDisplay($flexDirection: row, $justify: false, $align: false) {
+  display: flex;
+  flex-direction: $flexDirection;
+  @if $justify {
+    justify-content: $justify;
+  }
+  @if $align {
+    align-items: $align;
+  }
+}
+@mixin absoluteDisplay(
+  $top: false,
+  $right: false,
+  $left: false,
+  $bottom: false
+) {
+  position: absolute;
+  @if $top {
+    top: $top;
+  }
+  @if $right {
+    right: $right;
+  }
+  @if $left {
+    left: $left;
+  }
+  @if $bottom {
+    bottom: $bottom;
+  }
+}
+@mixin resumeStyle($ligntColor, $darkColor) {
+  .experience-icon {
+    border: 1px solid $darkColor;
+    background-color: $ligntColor;
+  }
+  .experience-details {
+    .year {
+      background-color: $darkColor;
+      color: $ligntColor;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .experience-description {
+      .description-header {
+        color: $darkColor;
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+  }
+}
+body {
+  font-family: "Poppins", sans-serif;
+  @include fontStyle(15px, 400, $default-color);
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  color: $black-color;
+}
+h2 {
+  @include fontStyle(35px, 700, $black-color);
+  margin: 0 0 10px;
+  position: relative;
+}
+h2:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: $blue-color;
+}
+
+h4 {
+  margin: 0;
+  @include fontStyle(14px, 400, $default-color);
+  letter-spacing: 2px;
+}
+p {
+  margin-bottom: 0;
+}
+.section-hidden {
+  opacity: 0;
+  transform: translateY(4rem);
+}
+section:nth-child(even) {
+  background-color: #eaedf2;
+}
+section:nth-child(odd) {
+  background-color: $white-color;
+}
+.job-title {
+  margin-bottom: 40px;
+}
+
+img {
+  filter: blur(20px);
+}
