@@ -1,0 +1,127 @@
+@import "base";
+//button-component
+.btn {
+  @include borderStyle(3.2px, (1px solid $blue-color));
+  background: $blue-color;
+  padding: 13px 24px;
+  margin-top: 8px;
+  transition: all 0.5s;
+  a {
+    font-size: 14px;
+    font-weight: 500;
+    color: $white-color;
+  }
+  &:hover {
+    background-color: #3f48a3;
+    border-color: #3f48a3;
+  }
+}
+//nav-component
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  padding: 0 5%;
+  background-color: $white-color;
+  height: 56px;
+  color: $black-color;
+  .header-container {
+    @include flexDisplay(row, space-between, center);
+    margin: 0 auto;
+    max-width: 1140px;
+    height: 100%;
+    .name {
+      @include fontStyle(24px, 600);
+    }
+    .nav-toggle-btn {
+      display: none;
+    }
+    .navigation-items-list {
+      @include flexDisplay(row, false, center);
+      list-style: none;
+      margin: 0;
+      .navigation-item {
+        margin-left: 16px;
+      }
+      .navigation-item {
+        .nav-page-link {
+          @include fontStyle(13px, 500, $black-color);
+          text-transform: uppercase;
+        }
+        &:hover .nav-page-link {
+          color: $blue-color;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .header-container {
+      position: relative;
+      .nav-toggle-btn {
+        @include flexDisplay(column, space-evenly, center);
+        width: 40px;
+        height: 40px;
+        background-color: $blue-color;
+        div {
+          width: 22.4px;
+          height: 2px;
+          background-color: $white-color;
+        }
+      }
+      .navigation-items-list {
+        &.active {
+          @include borderStyle(false, (1px solid #ddd));
+          @include flexDisplay(column, false, flex-start);
+          padding: 8px 15px;
+          background: $white-color;
+          list-style: none;
+          position: absolute;
+          top: 56px;
+          left: 0;
+          right: 0;
+        }
+        &.inactive {
+          display: none;
+        }
+        .navigation-item {
+          margin-left: 0;
+          &:not(:first-child) {
+            width: 100%;
+            border-top: 1px solid #ddd;
+          }
+          .nav-page-link {
+            @include fontStyle(13px, 500, $black-color);
+            text-transform: uppercase;
+            letter-spacing: 0.56px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//footer-component
+footer {
+  padding: 12px 5%;
+  background: #111;
+  .footer-container {
+    @include flexDisplay(row, space-between, false);
+    max-width: 1140px;
+    margin: 0 auto;
+    .contact-links a {
+      color: $grey-color;
+      font-size: 14px;
+      margin-right: 10px;
+      &:hover {
+        color: $white-color;
+      }
+    }
+    p {
+      color: $grey-color;
+      font-size: 12px;
+      margin: 0;
+    }
+  }
+}

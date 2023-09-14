@@ -1,0 +1,18 @@
+@import "base";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  padding: 5%;
+  transition: transform 1s, opacity 1s;
+}
+
+.section-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  /* padding-right: 15px;
+  padding-left: 15px; */
+}

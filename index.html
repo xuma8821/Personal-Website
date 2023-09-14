@@ -4,9 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
+      name="description"
+      content="Here is derek awesome personal webpage."
+    />
+    <meta name="keywords" content="HTML, CSS, JavaScript, personal website" />
+    <meta name="author" content="Winnie Ma" />
+    <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+
     <title>Personal Website</title>
     <link
       rel="stylesheet"
@@ -27,14 +34,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/general.css" />
-    <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/home-page.css" />
-    <link rel="stylesheet" href="styles/about-me.css" />
-    <link rel="stylesheet" href="styles/my-skills.css" />
-    <link rel="stylesheet" href="styles/my-service.css" />
-    <link rel="stylesheet" href="styles/contact-page.css" />
-    <link rel="stylesheet" href="styles/resume-page.css" />
+    <link rel="stylesheet" href="styles/_main.css" />
   </head>
   <body>
     <header>
@@ -88,7 +88,7 @@
             </button>
           </div>
           <div class="person-image">
-            <img src="person-images/person-pic.png" />
+            <img src="person-images/person-pic.png" alt="derek-person-img" />
           </div>
         </div>
         <div class="slider">
@@ -105,7 +105,7 @@
           </h4>
           <div class="personal-info-container">
             <div class="personal-picture">
-              <img src="person-images/about-me.jpg" />
+              <img src="person-images/about-me.jpg" alt="derek-about-me-img" />
               <div class="social-links">
                 <a class="facebook-link"><i class="fab fa-facebook-f"></i></a>
                 <a
@@ -182,7 +182,7 @@
                 <li class="skill-item">
                   <h6>AutoCAD</h6>
                   <div id="autoCAD" class="progress-container">
-                    <div class="progress-bar" style="width: 92%">
+                    <div class="progress-bar" data-target="92">
                       <div class="progress-value">92%</div>
                     </div>
                   </div>
@@ -190,7 +190,7 @@
                 <li class="skill-item">
                   <h6>Revit</h6>
                   <div class="progress-container">
-                    <div class="progress-bar" style="width: 86%">
+                    <div class="progress-bar" data-target="86">
                       <div class="progress-value">86%</div>
                     </div>
                   </div>
@@ -198,7 +198,7 @@
                 <li class="skill-item">
                   <h6>12D Model</h6>
                   <div class="progress-container">
-                    <div class="progress-bar" style="width: 80%">
+                    <div class="progress-bar" data-target="80">
                       <div class="progress-value">80%</div>
                     </div>
                   </div>
@@ -206,7 +206,7 @@
                 <li class="skill-item">
                   <h6>SAP2000</h6>
                   <div class="progress-container">
-                    <div class="progress-bar" style="width: 75%">
+                    <div class="progress-bar" data-target="75">
                       <div class="progress-value">75%</div>
                     </div>
                   </div>
@@ -302,22 +302,14 @@
           <div class="experience-container">
             <div class="education-part">
               <h5>My Education</h5>
-              <div class="experience eduaction-master">
-                <div
-                  class="experience-icon"
-                  style="border: 1px solid #678abe; background-color: #91bcfc"
-                >
+              <div class="experience education-master">
+                <div class="experience-icon">
                   <i class="fas fa-graduation-cap"></i>
                 </div>
                 <div class="experience-details">
-                  <p
-                    class="year"
-                    style="background-color: #678abe; color: #91bcfc"
-                  >
-                    2017-2019
-                  </p>
+                  <p class="year">2017-2019</p>
                   <div class="experience-description">
-                    <div class="description-header" style="color: #678abe">
+                    <div class="description-header">
                       <p class="field">Civil Engineering Master</p>
                       <p class="university-or-company">
                         The University of Sydney, Australia
@@ -335,22 +327,14 @@
                   </div>
                 </div>
               </div>
-              <div class="experience eduaction-bachelor">
-                <div
-                  class="experience-icon"
-                  style="border: 1px solid #4abd86; background-color: #96d7a5"
-                >
+              <div class="experience education-bachelor">
+                <div class="experience-icon">
                   <i class="fas fa-graduation-cap"></i>
                 </div>
                 <div class="experience-details">
-                  <p
-                    class="year"
-                    style="background-color: #4abd86; color: #96d7a5"
-                  >
-                    2012-2016
-                  </p>
+                  <p class="year">2012-2016</p>
                   <div class="experience-description">
-                    <div class="description-header" style="color: #4abd86">
+                    <div class="description-header">
                       <p class="field">Civil Engineering Bachelor</p>
                       <p class="university-or-company">
                         Taiyuan University of Technology, China
@@ -369,21 +353,13 @@
             <div class="experience-part">
               <h5>My experience</h5>
               <div class="experience experience-work">
-                <div
-                  class="experience-icon"
-                  style="border: 1px solid #956ad5; background-color: #b19ad2"
-                >
+                <div class="experience-icon">
                   <i class="fas fa-briefcase"></i>
                 </div>
                 <div class="experience-details">
-                  <p
-                    class="year"
-                    style="background-color: #956ad5; color: #b19ad2"
-                  >
-                    2020-2023
-                  </p>
+                  <p class="year">2020-2023</p>
                   <div class="experience-description">
-                    <div class="description-header" style="color: #956ad5">
+                    <div class="description-header">
                       <p class="field">Structure Designer</p>
                       <p class="university-or-company">
                         China Architecture Design & Research Group, China
